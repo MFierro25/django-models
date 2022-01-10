@@ -6,10 +6,15 @@
 </head>
 <body>
     <header>
+      <nav>
+        <a href = "{% url 'snack_list' %}">Home</a>
+        {% comment %} <a href = "{% url '<int:pk>' %}">Snack Details</a> {% endcomment %}
+      </nav>
     </header>
 
     <main>
         {% block content %}
+        
         {% endblock content %}
     </main>
 
